@@ -4,7 +4,7 @@ LABEL maintainer="kihi"
 
 COPY google-cloud-sdk.repo /etc/yum.repos.d/
 
-RUN curl -L https://download.docker.com/linux/centos/docker-ce.repo > /etc/yum.repos.d/
+RUN curl -L https://download.docker.com/linux/centos/docker-ce.repo > /etc/yum.repos.d/docker-ce.repo
 
 RUN dnf -y update \
  && dnf -y install docker-ce \
